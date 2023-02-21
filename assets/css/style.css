@@ -236,7 +236,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	height: 110vh;
+	min-height: 110vh;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -271,6 +271,7 @@ body {
 .contato-card-body form {
 	display: flex;
 	flex-direction: column;
+	text-align: center;
 	width: 100%;
 }
 .contato-card-body form input {
@@ -295,6 +296,14 @@ body {
 	margin-top: 30px;
 	margin-bottom: 20px;
 	resize: none;
+}
+
+.error {
+	opacity: 0;
+	color: crimson;
+	font-size: 15px;
+	margin-bottom: 20px;
+	transition: 0.2s;
 }
 
 .contato-form-btn {
@@ -556,7 +565,7 @@ body {
 
 	#Contato {
 		flex-direction: column;
-		height: 150vh;
+		height: 170vh;
 	}
 	.skills-card,
 	.contato-card {
@@ -588,7 +597,7 @@ body {
 	}
 
 	.skills-card,
-	.contato-card{
+	.contato-card {
 		width: 90%;
 	}
 }
